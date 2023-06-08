@@ -98,7 +98,7 @@ private:
         leftLowCut.template setBypassed<2>(true);
         leftLowCut.template setBypassed<4>(true);
         
-        switch(lowCutSlope){
+        switch(ChainSettings.lowCutSlope){
             case Slope_12:{
                 *leftLowCut.template get<0>().coefficients = *cutCoefficients[0];
                 leftLowCut.template setBypassed<0>(false);
