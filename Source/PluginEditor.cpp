@@ -36,16 +36,12 @@ SimpleEQAudioProcessorEditor::~SimpleEQAudioProcessorEditor()
 //==============================================================================
 void SimpleEQAudioProcessorEditor::paint (juce::Graphics& g)
 {
-    /*using namespace juce;*/
+    using namespace juce;
     
     // (Our component is opaque, so we must completely fill the background with a solid colour)
-    g.fillAll (getLookAndFeel().findColour (juce::ResizableWindow::backgroundColourId));
 
-    g.setColour (juce::Colours::white);
-    g.setFont (15.0f);
-    g.drawFittedText ("Hello World!", getLocalBounds(), juce::Justification::centred, 1);
     
-    /*g.fillAll (Colours::black);
+    g.fillAll (Colours::black);
     
     auto bounds = getLocalBounds();
     auto responseArea = bounds.removeFromTop(bounds.getHeight()*0.33);
@@ -117,7 +113,7 @@ void SimpleEQAudioProcessorEditor::paint (juce::Graphics& g)
     g.drawRoundedRectangle(responseArea.toFloat(), 4.f, 1.f);
     
     g.setColour(Colours::white);
-    g.strokePath(responseCurve, PathStrokeType(2.f));*/
+    g.strokePath(responseCurve, PathStrokeType(2.f));
 }
 
 void SimpleEQAudioProcessorEditor::resized()
@@ -142,7 +138,7 @@ void SimpleEQAudioProcessorEditor::resized()
     peakQualitySlider.setBounds(bounds);
 }
 
-/*void SimpleEQAudioProcessorEditor::parameterValueChanged(int parameterIndex, float newValue){
+void SimpleEQAudioProcessorEditor::parameterValueChanged(int parameterIndex, float newValue){
     parametersChanged.set(true);
 }
 
@@ -151,7 +147,7 @@ void SimpleEQAudioProcessorEditor::timerCallback(){
         //update the monochain
         //signal a repaint for new response curve
     }
-}*/
+}
 
 std::vector<juce::Component*> SimpleEQAudioProcessorEditor::getComps(){
     return{
