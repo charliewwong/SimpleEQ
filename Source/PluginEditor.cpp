@@ -5,6 +5,12 @@
 
   ==============================================================================
 */
+//COLOURS:
+//Cream: Colour(230u,200u,117u)
+//Lawn Green: Colour(156u,236u,91u)
+//Verdigris: Colour(80u,197u,183u)
+//Glaucous: Colour(97u,132u,216u)
+//English Violet: Colour(83u,58u,113u)
 
 #include "PluginProcessor.h"
 #include "PluginEditor.h"
@@ -14,10 +20,10 @@ void LookAndFeel::drawRotarySlider(juce::Graphics &g, int x, int y, int width, i
     
     auto bounds = Rectangle<float>(x, y, width, height);
     
-    g.setColour(Colour(97u, 18u, 167u));
+    g.setColour(Colour(80u,197u,183u));
     g.fillEllipse(bounds);
     
-    g.setColour(Colour(255u, 154u, 1u));
+    g.setColour(Colours::white);
     g.drawEllipse(bounds, 1.f);
     
     if(auto* rswl = dynamic_cast<RotarySliderWithLabels*>(&slider)){
