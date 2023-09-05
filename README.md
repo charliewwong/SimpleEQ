@@ -7,6 +7,6 @@ Includes:
 - peak adjustment w/quality, slope, freq
 
   
-![SimpleEQ_in_GarageBand](https://github.com/charliewwong/SimpleEQ/assets/58614539/8879137d-1445-46fd-a252-daf1775a9d63)
+![SimpleEQ_Garageband](https://github.com/charliewwong/SimpleEQ/assets/58614539/29620d0a-75e4-4dca-9251-0c8dd1041245)
 
 _Ahove: as utilized in garageband_
